@@ -5,15 +5,15 @@ Saya Fauzia Rahma Nisa mengerjakan Tugas Praktikum 6 dalam mata kuliah Desain da
 
 Program Flappy Bird ini dirancang menggunakan paradigma pemrograman berorientasi objek (OOP) dengan pembagian kelas berdasarkan fungsinya masing-masing. Secara keseluruhan, desain program ini membagi tanggung jawab secara terstruktur antara tampilan (Menu, View), logika permainan (Logic), serta objek utama (Player, Pipe). 
 
-- Kelas **Menu** berfungsi sebagai tampilan awal yang menampilkan judul permainan dan dua tombol utama, yaitu Play Game dan Exit. Saat tombol Play Game ditekan, jendela menu akan ditutup dan kelas App akan dijalankan untuk memulai permainan.
+- Kelas **Menu** berfungsi sebagai tampilan awal yang menampilkan judul permainan dan dua tombol, yaitu Play Game dan Exit. Saat tombol Play Game ditekan, jendela menu akan ditutup dan kelas App akan dijalankan untuk memulai permainan.
 
-- Kelas **App** bertugas menyiapkan jendela utama permainan (frame). Di dalamnya terdapat objek Logic yang mengatur jalannya permainan serta objek View yang berfungsi menampilkan elemen visual ke layar. Label skor juga dibuat dan dikirim ke Logic agar nilai skor dapat diperbarui secara real-time saat permainan berlangsung.
+- Kelas **App** bertugas menyiapkan jendela utama permainan. Di dalamnya terdapat objek Logic yang mengatur jalannya permainan serta objek View yang berfungsi menampilkan elemen visual ke layar. Label skor juga dibuat dan dikirim ke Logic agar nilai skor dapat diperbarui saat permainan berlangsung.
 
-- Kelas **Logic** menjadi inti dari program. Di sini terdapat pengaturan pergerakan, gravitasi, kecepatan pipa, serta deteksi tabrakan antara burung (Player) dan pipa (Pipe). Logic juga bertugas memperbarui skor setiap kali pemain berhasil melewati pipa tanpa menabrak. Kelas ini terhubung langsung dengan View agar perubahan logika dapat langsung tergambar di tampilan.
+- Kelas **Logic** menjadi inti dari program. Di sini terdapat pengaturan pergerakan, gravitasi, kecepatan pipa, serta deteksi tabrakan antara dan pipa. Logic juga bertugas memperbarui skor setiap kali pemain berhasil melewati pipa tanpa menabrak. Kelas ini terhubung langsung dengan View agar perubahan logika dapat langsung tergambar di tampilan.
 
 - Kelas **View** merupakan komponen yang mengatur tampilan grafis permainan. Kelas ini terdapat JPanel dan menampilkan semua elemen seperti latar belakang, burung, serta pipa. Ia juga menangani penggambaran ulang (repaint) dan input dari pemain seperti menekan tombol untuk membuat burung terbang.
 
-- Kelas **Player** merepresentasikan karakter utama, yaitu burung. Di dalamnya terdapat atribut posisi, kecepatan jatuh (velocity), serta gambar burung. Setiap kali pemain menekan tombol, kelas ini akan mengubah kecepatan agar burung bisa naik sementara gravitasi menariknya ke bawah.
+- Kelas **Player** merepresentasikan karakter utama, yaitu burung. Di dalamnya ada atribut posisi, kecepatan jatuh (velocity), serta gambar burung. Setiap kali pemain menekan tombol, kelas ini akan mengubah kecepatan agar burung bisa naik sementara gravitasi menariknya ke bawah.
 
 - Kelas **Pipe** digunakan untuk merepresentasikan rintangan berupa pipa yang bergerak dari kanan ke kiri. Setiap objek Pipe menyimpan posisi, ukuran, gambar, serta status apakah pipa sudah dilewati atau belum. Kelas ini membantu pengaturan gerakan pipa dan deteksi skor.
 
