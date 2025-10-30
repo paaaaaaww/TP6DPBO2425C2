@@ -26,4 +26,4 @@ Program Flappy Bird ini dirancang menggunakan paradigma pemrograman berorientasi
   Ketika burung berhasil melewati pipa bawah, skor akan +1 dan label skor diperbarui secara otomatis. Namun, jika burung menabrak pipa atau jatuh ke bawah layar, permainan berakhir dan status gameOver akan menjadi benar. Pada saat itu, layar menampilkan tulisan “GAME OVER” serta instruksi untuk menekan tombol R agar dapat memulai ulang permainan. Saat tombol tersebut ditekan, game di-reset: posisi burung kembali ke awal, skor diatur ulang ke nol, dan semua pipa dihapus dari layar.
 
 **3. Dokumentasi saat program dijalankan**
-[!gif](Dokumentasi/Tp6.gif)
+![gif](Dokumentasi/tp6.gif)
