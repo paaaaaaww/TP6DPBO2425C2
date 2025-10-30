@@ -3,7 +3,7 @@ Saya Fauzia Rahma Nisa mengerjakan Tugas Praktikum 6 dalam mata kuliah Desain da
 
 **1. Desain program**
 
-Program Flappy Bird ini dirancang menggunakan paradigma pemrograman berorientasi objek (OOP) dengan pembagian kelas berdasarkan fungsinya masing-masing. Secara keseluruhan, desain program ini membagi tanggung jawab secara terstruktur antara tampilan (Menu, View), logika permainan (Logic), serta objek utama (Player, Pipe). 
+Program Flappy Bird ini dirancang menggunakan OOP dengan pembagian kelas berdasarkan fungsinya masing-masing. Secara keseluruhan, desain program ini membagi tanggung jawab secara terstruktur antara tampilan (Menu, View), logika permainan (Logic), serta objek utama (Player, Pipe). 
 
 - Kelas **Menu** berfungsi sebagai tampilan awal yang menampilkan judul permainan dan dua tombol, yaitu Play Game dan Exit. Saat tombol Play Game ditekan, jendela menu akan ditutup dan kelas App akan dijalankan untuk memulai permainan.
 
