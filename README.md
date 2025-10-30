@@ -27,3 +27,7 @@ Program Flappy Bird ini dirancang menggunakan paradigma pemrograman berorientasi
 
 **3. Dokumentasi saat program dijalankan**
 ![gif](Dokumentasi/tp6.gif)
+
+
+
+![gif](Dokumentasi/tp6aku.gif)
