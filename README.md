@@ -3,17 +3,19 @@ Saya Fauzia Rahma Nisa mengerjakan Tugas Praktikum 6 dalam mata kuliah Desain da
 
 **1. Desain program**
 
-    Program Flappy Bird ini dirancang menggunakan paradigma berorientasi objek (OOP) dengan pembagian kelas berdasarkan tanggung jawabnya masing-masing. Kelas Menu berfungsi sebagai tampilan awal yang menampilkan judul permainan dan dua tombol utama, yaitu Play Game dan Exit. Saat tombol Play Game ditekan, jendela menu akan ditutup dan kelas App akan dijalankan untuk memulai permainan.
+Program Flappy Bird ini dirancang menggunakan paradigma pemrograman berorientasi objek (OOP) dengan pembagian kelas berdasarkan fungsinya masing-masing. Secara keseluruhan, desain program ini membagi tanggung jawab secara terstruktur antara tampilan (Menu, View), logika permainan (Logic), serta objek utama (Player, Pipe). 
 
-Kelas App bertugas menyiapkan jendela utama permainan (frame). Di dalamnya terdapat objek Logic yang mengatur jalannya permainan serta objek View yang berfungsi menampilkan elemen visual ke layar. Label skor juga dibuat dan dikirim ke Logic agar nilai skor dapat diperbarui secara real-time saat permainan berlangsung.
+Kelas **Menu** berfungsi sebagai tampilan awal yang menampilkan judul permainan dan dua tombol utama, yaitu Play Game dan Exit. Saat tombol Play Game ditekan, jendela menu akan ditutup dan kelas App akan dijalankan untuk memulai permainan.
 
-Kelas Logic menjadi inti dari program. Di sini terdapat pengaturan pergerakan, gravitasi, kecepatan pipa, serta deteksi tabrakan antara burung (Player) dan pipa (Pipe). Logic juga bertugas memperbarui skor setiap kali pemain berhasil melewati pipa tanpa menabrak. Kelas ini terhubung langsung dengan View agar perubahan logika dapat langsung tergambar di tampilan.
+Kelas **App** bertugas menyiapkan jendela utama permainan (frame). Di dalamnya terdapat objek Logic yang mengatur jalannya permainan serta objek View yang berfungsi menampilkan elemen visual ke layar. Label skor juga dibuat dan dikirim ke Logic agar nilai skor dapat diperbarui secara real-time saat permainan berlangsung.
 
-Kelas View merupakan komponen yang mengatur tampilan grafis permainan. Kelas ini mewarisi JPanel dan menampilkan semua elemen seperti latar belakang, burung, serta pipa. Ia juga menangani penggambaran ulang (repaint) dan input dari pemain seperti menekan tombol untuk membuat burung terbang.
+Kelas **Logic** menjadi inti dari program. Di sini terdapat pengaturan pergerakan, gravitasi, kecepatan pipa, serta deteksi tabrakan antara burung (Player) dan pipa (Pipe). Logic juga bertugas memperbarui skor setiap kali pemain berhasil melewati pipa tanpa menabrak. Kelas ini terhubung langsung dengan View agar perubahan logika dapat langsung tergambar di tampilan.
 
-Kelas Player merepresentasikan karakter utama, yaitu burung. Di dalamnya terdapat atribut posisi, kecepatan jatuh (velocity), serta gambar burung. Setiap kali pemain menekan tombol, kelas ini akan mengubah kecepatan agar burung bisa naik sementara gravitasi menariknya ke bawah.
+Kelas **View** merupakan komponen yang mengatur tampilan grafis permainan. Kelas ini terdapat JPanel dan menampilkan semua elemen seperti latar belakang, burung, serta pipa. Ia juga menangani penggambaran ulang (repaint) dan input dari pemain seperti menekan tombol untuk membuat burung terbang.
 
-Kelas Pipe digunakan untuk merepresentasikan rintangan berupa pipa yang bergerak dari kanan ke kiri. Setiap objek Pipe menyimpan posisi, ukuran, gambar, serta status apakah pipa sudah dilewati atau belum. Kelas ini membantu pengaturan gerakan pipa dan deteksi skor.
+Kelas **Player** merepresentasikan karakter utama, yaitu burung. Di dalamnya terdapat atribut posisi, kecepatan jatuh (velocity), serta gambar burung. Setiap kali pemain menekan tombol, kelas ini akan mengubah kecepatan agar burung bisa naik sementara gravitasi menariknya ke bawah.
+
+Kelas **Pipe** digunakan untuk merepresentasikan rintangan berupa pipa yang bergerak dari kanan ke kiri. Setiap objek Pipe menyimpan posisi, ukuran, gambar, serta status apakah pipa sudah dilewati atau belum. Kelas ini membantu pengaturan gerakan pipa dan deteksi skor.
 
 **2. Alur Program**
 
