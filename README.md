@@ -19,7 +19,7 @@ Program Flappy Bird ini dirancang menggunakan OOP dengan pembagian kelas berdasa
 
 **2. Alur Program**
 
-  Program dimulai dari kelas Menu.java. Saat dijalankan, akan muncul jendela berisi judul dan dua tombol yaitu Play Game dan Exit. Jika pemain menekan tombol Play Game, maka jendela menu ditutup dan game utama dijalankan melalui kelas App. Di dalam kelas ini dibuat jendela permainan berukuran 360x640 piksel, label skor, serta dua objek penting yaitu Logic dan View yang saling terhubung.
+  Program dimulai dari kelas Menu.java. Saat dijalankan, akan muncul jendela berisi judul dan dua tombol yaitu Play Game dan Exit. Jika pemain menekan tombol Play Game, maka jendela menu ditutup dan game utama dijalankan melalui kelas App. Di dalam kelas ini dibuat jendela permainan berukuran 360 x 640 piksel, label skor, serta dua objek penting yaitu Logic dan View yang saling terhubung.
 
   Setelah game dimulai, kelas Logic.java mengatur seluruh jalannya permainan menggunakan dua buah timer. Timer pertama berfungsi untuk mengupdate posisi objek sekitar 60 kali per detik, sedangkan timer kedua menambahkan pipa baru setiap 2 detik. Saat pemain menekan tombol spasi, burung akan melompat ke atas, dan jika tidak, gravitasi akan menariknya turun. Pipa-pipa bergerak ke kiri secara terus-menerus dan pemain harus menjaga agar burung tidak menabrak.
 
