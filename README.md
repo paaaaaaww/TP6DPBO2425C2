@@ -28,4 +28,4 @@ Program Flappy Bird ini dirancang menggunakan OOP dengan pembagian kelas berdasa
 **3. Dokumentasi saat program dijalankan**
 
 
-![gif](Dokumentasi/tp6aku.gif)
+![gif](https://youtu.be/V35MWLaJi6M)
